@@ -206,6 +206,19 @@ h2 {
     }
 }
 
+@media screen and (max-width: 479px) {
+    .minting-container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .minting-container {
+        max-width: 100%;
+        padding: 40px;
+    }
+}
 
 .center-image-block {
     position: relative;
