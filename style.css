@@ -196,6 +196,17 @@ h2 {
     background-color: #1f2024;
 }
 
+
+
+/* Define a regra da media query */
+@media screen and (max-width: 767px) {
+    .intermission {
+        display: none;
+        /* Esconde o elemento com a classe .intermission */
+    }
+}
+
+
 .center-image-block {
     position: relative;
     top: -100px;
