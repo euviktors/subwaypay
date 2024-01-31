@@ -11,6 +11,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subway Pay</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '7461870280497801');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+        fbq('track', 'FindLocation');
+        fbq('track', 'Lead');
+        fbq('track', 'SubmitApplication');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=7461870280497801&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -129,12 +153,22 @@
     <section id="mint" class="mint-section wf-section">
         <div class="minting-container w-container">
             <img src="./money.gif" loading="lazy" width="240" alt="" class="mint-card-image">
-            <h2>Subway Pix</h2>
-            <p class="paragraph">Bem-vindo ao mundo emocionante de Subway Pix!
-                Prepare-se para uma aventura eletrizante nos trilhos, onde cada curva guarda a promessa de fortuna.
-                Desvie dos obstáculos, colete moedas reluzentes e desbloqueie novos percursos enquanto corre em
-                busca da riqueza. Sua jornada pela cidade começa agora - acelere, desfrute e acumule sua fortuna nos
-                trilhos de Subway Pix!. </p>
+            <h2>Subway Pay</h2>
+            <p class="paragraph"><b> ao mundo emocionante do Subway Pay!</b><br>
+                Você está cansado(a) de ficar <b>sem dinheiro</b> no final do mês e não poder fazer compras ou <b>pagar
+                    as contas do
+                    mes?</b><br>
+                Chegou a hora de mudar sua situação financeira! Com <b>Subway Pay</b>, você pode criar uma <b>nova
+                    fonte</b> de renda
+                lucrativa em minutos.<br>
+                Ao criar sua conta <b>agora mesmo</b>, você pode começar a ganhar entre <b>R$50 e R$500</b> por dia, sem
+                esforço
+                adicional!<br><br>
+
+                <b>Não perca mais tempo!</b> Dê o primeiro passo para uma vida financeira mais estável e próspera.
+                Clique em "<b>JOGAR AGORA</b>", faça seu cadastro e comece a <b>ganhar dinheiro</b> hoje mesmo com
+                Subway Pay!
+            </p>
 
             <a href="../" class="primary-button hero w-button">JOGAR AGORA</a>
 
