@@ -2,117 +2,199 @@
 <html lang="pt-br" class="">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compos Link Bio</title>
-  <link rel="stylesheet" href="./style.css" />
-  <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1009893053457841');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent');
-    fbq('track', 'Contact');
-    fbq('track', 'Lead');
-    fbq('track', 'Subscribe', { value: '0.00', currency: 'BRL', predicted_ltv: '0.00' }); //Subscrever
-    fbq('track', 'CompleteRegistration'); //Concluir registo
-
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1009893053457841&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T65JJ57J');</script>
-  <!-- End Google Tag Manager -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 
 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Pay - Ganhe Dinheiro Hoje Mesmo!</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '7461870280497801');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+        fbq('track', 'FindLocation');
+        fbq('track', 'Lead');
+        fbq('track', 'SubmitApplication');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=7461870280497801&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="icon" href="./money.gif" type="image/gif">
 </head>
 
 <body>
-  <div id="container">
-    <!-- o ID é o RG so pode ser um porem pode ter variantes-->
-    <div id="profile">
-      <img src="./Avatar-compos.svg" alt="Foto do perfil" />
-      <p>Clique em algum dos botões abaixo para falar conosco.</p>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <script>
+        const nomes = [
+            "Alice", "Lucas", "Sofia", "Pedro", "Laura", "Miguel", "Isabella", "Gabriel", "Valentina", "Matheus",
+            "Maria", "Arthur", "Helena", "Bernardo", "Luiza", "Davi", "Beatriz", "Heitor", "Giovanna", "Samuel",
+            "Clara", "Enzo", "Maria Eduarda", "João", "Julia", "Henrique", "Lívia", "Lucca", "Mariana", "Gustavo",
+            "Isadora", "Rafael", "Gabriela", "Felipe", "Lara", "Daniel", "Amanda", "Theo", "Natália", "Benjamin",
+            "Sophia", "Murilo", "Camila", "Luiz", "Eloá", "Bruno", "Valéria", "Leo", "Yasmin", "Bryan", "Ayla", "Caio",
+            "Sofia", "Lucas", "Alice", "Arthur", "Isabella", "Pedro", "Laura", "Gabriel", "Valentina", "Matheus",
+            "Maria", "Miguel", "Helena", "Davi", "Giovanna", "Maria Eduarda", "Bernardo", "Luiza", "Heitor", "Clara",
+            "Samuel", "Beatriz", "Enzo", "João", "Julia", "Gustavo", "Mariana", "Henrique", "Isadora", "Lucca", "Gabriela",
+            "Clara", "Rodrigo", "Yasmin", "Felipe", "Amanda", "Carlos", "Renata", "Thiago", "Carol", "Matias", "Sofia",
+            "Gustavo", "Marina", "Felipe", "Ana", "Caio", "Laura", 'Luan', 'Larissa', 'João', 'Lorena', 'Rafael', 'Lara',
+            'Guilherme', 'Manuela', 'Nicolas', 'Júlia', 'Breno', 'Lívia', 'Eduardo', 'Beatriz', 'Vinícius', 'Isabelly',
+            'João', 'Sarah', 'Luiz', 'Ana', 'Gustavo', 'Maria', 'Henrique', 'Ana', 'Daniel', 'Carolina', 'Pedro', 'Amanda',
+            'Leonardo', 'Maria', 'Murilo', 'Isabela', 'Vitor', 'Lavínia', 'João', 'Gabrielly', 'Emanuel', 'Ana', 'João',
+            'Mari', 'Luiz', 'Vitor',
+        ];
+
+        const sobrenomes = [
+            "Silva", "Santos", "Pereira", "Ferreira", "Oliveira", "Souza", "Rodrigues", "Almeida", "Lima", "Costa",
+            "Castro", "Fernandes", "Ribeiro", "Carvalho", "Gomes", "Martins", "Araújo", "Barbosa", "Correia", "Fernandes",
+            "Machado", "Pinto", "Moraes", "Cardoso", "Dias", "Marques", "Ferreira", "Moreira", "Nunes", "Barbosa",
+            "Ribeiro", "Oliveira", "Castro", "Almeida", "Costa", "Santos", "Rodrigues", "Pereira", "Lima", "Souza",
+            "Silva", "Gomes", "Carvalho", "Martins", "Correia", "Fernandes", "Araújo", "Machado", "Pinto", "Moraes",
+            "Cardoso", "Dias", "Moreira", "Nunes", "Marques", "Ramos", "Cunha", "Fonseca", "Ferreira", "Barbosa",
+            "Dias", "Pereira", "Lima", "Castro", "Ribeiro", "Souza", "Santos", "Oliveira", "Rodrigues", "Almeida",
+            "Costa", "Carvalho", "Martins", "Machado", "Gomes", "Fernandes", "Correia", "Moraes", "Pinto", "Cardoso",
+            "Moreira", "Nunes", "Araújo", "Marques", "Cunha", "Ferreira", "Barbosa", "Lima", "Dias", "Pereira", "Silva",
+            "Ribeiro", "Castro", "Carvalho", "Souza", "Rodrigues", "Martins", "Gomes", "Oliveira", "Correia",
+            "Almeida", "Machado", "Fernandes", "Costa", "Pinto", "Moreira", "Moraes", "Cardoso", "Araújo", "Nunes",
+            "Marques", "Ferreira", "Barbosa", "Cunha", "Ramos", "Fonseca", "Silva", "Santos", "Pereira", "Ferreira",
+        ];
+
+        function generateAleatoryName() {
+            const nomeAleatorio = nomes[Math.floor(Math.random() * nomes.length)];
+            const sobrenomeAleatorio = sobrenomes[Math.floor(Math.random() * sobrenomes.length)];
+            return nomeAleatorio + " " + sobrenomeAleatorio;
+        }
+
+        function formatCurrencyBrazilian(number) {
+            try {
+                number = parseFloat(number);
+            } catch (e) { }
+            let formattedNumber = number.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, '$1.');
+
+            return formattedNumber;
+        }
+
+        function createNotification() {
+            let list_event = ['deposit', 'withdraw', 'gain'];
+            let randomNumber = Math.random();
+            let event_notify;
+            if (randomNumber < 0.75) {
+                event_notify = 'withdraw';
+            } else {
+                event_notify = (randomNumber < 0.875) ? 'deposit' : 'gain';
+            }
+            let random_name = generateAleatoryName();
+            let value = -1
+            let msg = ""
+            let redirectLink = ""
+
+            if (event_notify == 'deposit') {
+                redirectLink = "/deposito"
+                value = Math.floor(Math.random() * (100 - 20 + 1)) + 20;
+                value = formatCurrencyBrazilian(value);
+                msg = random_name + ' realizou um depósito de R$ ' + value
+            } else if (event_notify == 'withdraw') {
+                redirectLink = "/saque"
+                value = Math.floor(Math.random() * (175 - 50 + 1)) + 50;
+                value = formatCurrencyBrazilian(value);
+                msg = random_name + ' realizou um saque de R$ ' + value
+            } else {
+                redirectLink = "/painel"
+                value = Math.floor(Math.random() * (100 - 5 + 1)) + 5;
+                value = formatCurrencyBrazilian(value);
+                msg = random_name + ' ganhou R$ ' + value + ' jogando';
+            }
+
+            Toastify({
+                text: msg,
+                duration: 5000,
+                destination: redirectLink,
+                close: true,
+                gravity: "bottom",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #8ec73e)",
+                },
+                onClick: function () { }
+            }).showToast();
+        }
+
+        function callNotification() {
+            const minInterval = 5000;
+            const maxInterval = 15000;
+            const dynamicInterval = Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
+            setInterval(createNotification, dynamicInterval);
+        }
+
+        callNotification();
+    </script>
+
+
+
+
+    <section id="mint" class="mint-section wf-section">
+        <div class="minting-container w-container">
+            <img src="./money.gif" loading="lazy" width="240" alt="" class="mint-card-image">
+            <h2>Subway Pay</h2>
+            <p class="paragraph"><b> Bem vindo ao mundo emocionante do Subway Pay!</b><br>
+                Você está cansado(a) de ficar <b>sem dinheiro</b> no final do mês e não poder fazer compras ou <b>pagar
+                    as contas do
+                    mes?</b><br>
+                Chegou a hora de mudar sua situação financeira! Com <b>Subway Pay</b>, você pode criar uma <b>nova
+                    fonte</b> de renda
+                lucrativa em minutos.<br>
+                Ao criar sua conta <b>agora mesmo</b>, você pode começar a ganhar entre <b>R$50 e R$500</b> por dia, sem
+                esforço
+                adicional!<br><br>
+
+                <b>Não perca mais tempo!</b> Dê o primeiro passo para uma vida financeira mais estável e próspera.
+                Clique em "<b>JOGAR AGORA</b>", faça seu cadastro e comece a <b>ganhar dinheiro</b> hoje mesmo com
+                Subway Pay!
+            </p>
+
+            <a href="https://bit.ly/3vSk2Fc" class="primary-button hero w-button">JOGAR AGORA</a>
+
+            <div class="price">
+                <strong>Rodadas de boas vindas disponível</strong>
+            </div>
+        </div>
+
+    </section>
+    <div class="intermission wf-section">
+        <div data-w-id="aa174648-9ada-54b0-13ed-6d6e7fd17602" class="center-image-block">
+            <img src="./robots_line_1.svg" loading="eager" alt="">
+        </div>
     </div>
-    <!--botões---->
-    <ul>
-      <li>
-        <a href="https://abrir.link/xLjMU" target="_blank"> <ion-icon name="logo-whatsapp"></ion-icon> Whatsapp</a>
-      </li>
-      <li>
-        <a href="mailto:comercial@compos.net.br" target="_blank"> <ion-icon name="mail-outline"></ion-icon> E-mail</a>
-      </li>
 
 
-    </ul>
-  </div>
-  <!--ro dapé-->
-  </div>
-
-  <!--Instalação do ion icons-------------------------------->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
-  </script>
-  <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js">
-  </script>
-  <!--Fim da Instalação do ion icons-->
-  <script src="script.js"></script>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T65JJ57J" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T65JJ57J" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!--TAG DE ACOMPANHAMENTO DO LINKEDIN-->
-  <script type="text/javascript">
-    _linkedin_partner_id = "6116177";
-    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-  </script>
-  <script type="text/javascript">
-    (function (l) {
-      if (!l) {
-        window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
-        window.lintrk.q = []
-      }
-      var s = document.getElementsByTagName("script")[0];
-      var b = document.createElement("script");
-      b.type = "text/javascript"; b.async = true;
-      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-      s.parentNode.insertBefore(b, s);
-    })(window.lintrk);
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://px.ads.linkedin.com/collect/?pid=6116177&fmt=gif" />
-  </noscript>
+    <!--Instalação do ion icons-------------------------------->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    </script>
+    <!--Fim da Instalação do ion icons-->
+    <script src="script.js"></script>
 </body>
 
 </html>
